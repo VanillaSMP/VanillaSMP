@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla SMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="background-music" loop>
+        <source src="minecraft-theme.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-toggle" class="music-btn">🔊</button>
+
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Server Logo" class="logo">
+            <h1>Vanilla SMP</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="rules">Rules</a></li>
+                <li><a href="#" class="nav-link" data-page="gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div id="home-page" class="page active">
+                <section id="welcome">
+                    <h2>Welcome to the Server!</h2>
+                    <p>The ultimate survival experience. Join our community and start your adventure today!</p>
+                </section>
+
+                <section id="join">
+                    <h3>Join Now!</h3>
+                    <div class="server-info">
+                        <p>Server Status: <span class="status-online">ONLINE</span></p>
+                        <div class="ip-container">
+                            <p>Server IP: <span id="server-ip">play.vanillasmp.net</span></p>
+                            <button id="copy-ip-btn">Copy IP</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="about-page" class="page">
+                <section>
+                    <h2>About Vanilla SMP</h2>
+                    <p>Welcome to Vanilla SMP, where the true Minecraft experience lives on! Our server is dedicated to providing an authentic, unmodified survival multiplayer experience that stays true to the original vision of Minecraft.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>We believe that Minecraft is at its best when it's pure and unaltered. No complex plugins, no pay-to-win mechanics, no shortcuts - just you, your creativity, and the endless possibilities of the Minecraft world.</p>
+                    
+                    <h3>Server Features</h3>
+                    <ul class="feature-list">
+                        <li>✅ 100% Vanilla Gameplay</li>
+                        <li>✅ Active and Friendly Community</li>
+                        <li>✅ Regular Backups</li>
+                        <li>✅ 24/7 Uptime</li>
+                        <li>✅ Grief Protection</li>
+                        <li>✅ Fair and Experienced Staff</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="rules-page" class="page">
+                <section>
+                    <h2>Server Rules</h2>
+                    <p>To ensure everyone has a great time on Vanilla SMP, please follow these simple rules:</p>
+                    
+                    <div class="rules-grid">
+                        <div class="rule-card">
+                            <h3>🚫 No Griefing</h3>
+                            <p>Respect other players' builds and creations. Don't destroy or modify others' work without permission.</p>
+                        </div>
+                        
+                        <div class="rule-card">
+                            <h3>🤝 Be Respectful</h3>
+                            <p>Treat all players with kindness and respect. No harassment, discrimination, or toxic behavior.</p>
+                        </div>
+                        
+                        <div class="rule-card">
+                            <h3>⚔️ No Cheating</h3>
+                            <p>No hacked clients, x-ray mods, or any unfair advantages. Play the game as intended.</p>
+                        </div>
+                        
+                        <div class="rule-card">
+                            <h3>🗣️ Keep Chat Clean</h3>
+                            <p>No spam, excessive caps, or inappropriate content in chat. Keep discussions family-friendly.</p>
+                        </div>
+                        
+                        <div class="rule-card">
+                            <h3>🏠 Build Responsibly</h3>
+                            <p>Don't build too close to others without permission. Leave space for the community to grow.</p>
+                        </div>
+                        
+                        <div class="rule-card">
+                            <h3>📞 Report Issues</h3>
+                            <p>If you encounter problems or rule violations, contact staff members immediately.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="gallery-page" class="page">
+                <section>
+                    <h2>Community Gallery</h2>
+                    <p>Check out some amazing builds from our community members!</p>
+                    
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <div class="placeholder-image">🏰</div>
+                            <h4>Medieval Castle</h4>
+                            <p>by Steve_Builder</p>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <div class="placeholder-image">🌸</div>
+                            <h4>Cherry Blossom Garden</h4>
+                            <p>by BloomCrafter</p>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <div class="placeholder-image">🏭</div>
+                            <h4>Industrial District</h4>
+                            <p>by RedstoneKing</p>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <div class="placeholder-image">⛵</div>
+                            <h4>Harbor Town</h4>
+                            <p>by SeaExplorer</p>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <div class="placeholder-image">🗻</div>
+                            <h4>Mountain Fortress</h4>
+                            <p>by PeakBuilder</p>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <div class="placeholder-image">🌳</div>
+                            <h4>Treehouse Village</h4>
+                            <p>by NatureLover</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vanilla SMP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
